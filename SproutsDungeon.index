@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>Sprouts Dungeon</name>
+		<description>Homebrew content for the sprouts.</description>
+    <update version="1.0">
+      <file name="sprout.index" url="https://raw.githubusercontent.com/brusselsprouts-net/SproutsDungeonHomebrew/main/SproutsDungeon.index" />
+    </update>
+  </info>
+  <files>
+    <file name="items.xml" url="https://raw.githubusercontent.com/brusselsprouts-net/SproutsDungeonHomebrew/main/items.xml" />
+  </files>
+</index>

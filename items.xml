@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	<name>Items</name>
+	<update version="1.0">
+		<file name="items.xml" url="https://raw.githubusercontent.com/brusselsprouts-net/SproutsDungeonHomebrew/main/items.xml" />
+	</update>
+	</info>
+
+  <element name="Acid Arrow" type="Magic Item" source="Sprouts Dungeon" id="ID_SPROUTS_MAGIC_ITEM_ACID_ARROW">
+		<description>
+			<p>A vial of weakening, enchanted acid is embedded in the arrowhead.</p>
+            <p>On a hit, the target takes 1d8 acid damage and must pass a 15 DC CON saving throw or suffer -2 to their AC and have disadvantage on CON saving throws for 3 rounds (does not stack).</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+    <element name="Thunderclap Arrow" type="Magic Item" source="Sprouts Dungeon" id="ID_SPROUTS_MAGIC_ITEM_THUNDERCLAP_ARROW">
+		<description>
+            <p>Faint vibrations noticeable on contact course through the arrow.</p>
+            <p>These arrows release a thunderous explosion on hit. All creatures within a 10ft radius must make a 15 DC CON saving throw or take 2d8 thunder damage, are pushed back 5ft and fall prone. Loose objects are automatically pushed 5ft away.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+    <element name="Voltaic Bludgeon" type="Magic Item" source="Sprouts Dungeon" id="ID_SPROUTS_MAGIC_ITEM_VOLTAIC_BLUDGEON">
+		<description>
+            <p>Whenever the bearer deals damage to a creature, this weapon gains a charge.</p>
+            <p>As a bonus action, the bearer can use any number of charges to deal that much extra lightning damage on their next attack.</p>
+            <p>If a round (6 seconds) goes by and the weapon has not struck a foe, it loses all charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">club</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="club">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CLUBS</set>
+			<set name="name-format">Voltaic Bludgeon</set>
+		</setters>
+	</element>
+
+</elements>
